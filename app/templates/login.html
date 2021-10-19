@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% include 'navbar.html' %}
+{% block index %}
+    <div style="margin-left: 25rem;margin-top: 5rem">
+        <div class="row">
+            <form class="col s12" action="/login/" method="post">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="user" placeholder="Enter..." id="first_name" type="text" class="validate">
+                  <label for="first_name">User Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input name="password" id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col s12">
+                        <button type="submit" class="waves-effect waves-light btn-large">Login</button>
+                  </div>
+              </div>
+            </form>
+        </div>
+    </div>
+
+
+
+{% endblock %}
